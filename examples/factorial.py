@@ -4,7 +4,9 @@ https://youtu.be/wMNrSM5RFMc
 https://www.artima.com/forums/flat.jsp?forum=181&thread=75931
 
 """
-import math
+# import math
+import sys
+sys.setrecursionlimit(5000)
 
 # to_fact = 500
 # print(math.factorial(to_fact))
@@ -12,7 +14,6 @@ import math
 """
 Simplest:
 """
-
 
 def get_recursive_factorial(n):
     if n < 0:
@@ -34,8 +35,8 @@ def get_iterative_factorial(n):
         return fact_step
 
 
-print("get_recursive_factorial ", get_recursive_factorial(5))
-print("get_iterative_factorial ", get_iterative_factorial(5))
+# print("get_recursive_factorial ", get_recursive_factorial(5))
+# print("get_iterative_factorial ", get_iterative_factorial(5))
 
 
 # def recursive_factorial(n):
