@@ -1,9 +1,8 @@
 """
 https://python-3-patterns-idioms-test.readthedocs.io/en/latest/Singleton.html
 """
-import logging
 
-from examples.log_tst import cons_test_logger
+from logme.log_tst import cons_test_logger
 log = cons_test_logger()
 # log = logging.getLogger("core.corelogger")
 

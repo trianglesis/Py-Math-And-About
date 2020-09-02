@@ -2,27 +2,9 @@
 https://youtu.be/_JtPhF8MshA
 """
 
+from examples.factorial import get_recursive_factorial
 
-# Factorial Unefficient
-
-
-def get_recursive_factorial(n):
-    if n < 0:
-        return -1
-    elif n < 2:
-        return 1
-    else:
-        return n * get_recursive_factorial(n-1)
-
-
-def get_iterative_factorial(n):
-    if n < 0:
-        return - 1
-    else:
-        fact_step = 1
-        for i in range(1, n+1):
-            fact_step *= i
-        return fact_step
-
+# Factorial Inefficient
 print("get_recursive_factorial ", get_recursive_factorial(5))
-print("get_iterative_factorial ", get_iterative_factorial(5))
+
+# Factorial efficient with "go" function:
